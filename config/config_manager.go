@@ -77,7 +77,7 @@ func (cm *ConfigManager) UpdateConfigFromEnv(conf interface{}, ty string) {
 
 	configEnvUpdateValuesMap := make(map[string]string)
 	for k, v := range localConfigMap {
-		updatedVal, envValfound := env.GetOsEnviron().Get(v)
+		updatedVal, envValfound := GetOsEnviron().Get(v)
 
 		if !envValfound {
 			fmt.Printf("\n>> Environment variable %s not found\n", v)

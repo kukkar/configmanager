@@ -4,7 +4,6 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"github.com/ralali/r-credit-backoffice-api/pkg/utils/env"
 	"io/ioutil"
 	"log"
 	"strconv"
